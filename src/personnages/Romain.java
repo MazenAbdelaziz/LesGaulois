@@ -29,5 +29,13 @@ public class Romain {
 			parler("J'abandonne...");
 		}
 	}
-	
+	public static void main(String[] args) {
+		Gaulois asterix = new Gaulois("Astérix", 8);
+		Romain minus = new Romain("Minus", 10);
+		System.out.println(asterix.getNom());
+		System.out.println(asterix);
+//		minus.prendreParole();
+//		minus.parler(null);
+//		minus.recevoirCoup(10);
+	}
 }
