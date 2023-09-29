@@ -48,4 +48,8 @@ public class Gaulois {
 		parler("Merci Druide, je sens que ma force est " + effetPotion + " fois décuplée.");
 	}
 
+	public int getForce() {
+		return force;
+	}
+
 }
