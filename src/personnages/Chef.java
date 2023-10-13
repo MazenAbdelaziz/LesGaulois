@@ -1,14 +1,49 @@
+//package personnages;
+//
+//public class Chef {
+//	private String nom
+//	private int force;
+//	private Village village;
+//
+//	public Chef(String nom, int force) {
+//		this.nom = nom;
+//		this.force = force;
+//		this.village = village;
+//	}
+//
+//	public String getNom() {
+//		return nom;
+//	}
+//
+//	public void parler(String texte) {
+//		System.out.println(prendreParole() + "« " + texte + "»");
+//	}
+//
+//	private String prendreParole() {
+//		return "Le chef " + nom + " du village " + village.getNom() + " : ";
+//	}
+//
+//	public void frapper(Romain romain) {
+//		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+//		romain.recevoirCoup(force / 3);
+//	}
+//
+//	public int getForce() {
+//		return force;
+//	}
+//}
+
 package personnages;
 
 public class Chef {
 	private String nom;
 	private int force;
-	private Village village;
+	private int effetPotion = 1;
 
 	public Chef(String nom, int force) {
 		this.nom = nom;
 		this.force = force;
-		this.village = village;
+
 	}
 
 	public String getNom() {
@@ -16,19 +51,15 @@ public class Chef {
 	}
 
 	public void parler(String texte) {
-		System.out.println(prendreParole() + "« " + texte + "»");
+		System.out.println(prendreParole() + "� " + texte + "�");
 	}
 
 	private String prendreParole() {
-		return "Le chef " + nom + " du village " + village.getNom() + " : ";
+		return "Le chef " + nom + " du village ";
 	}
 
 	public void frapper(Romain romain) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la m�choire de " + romain.getNom());
 		romain.recevoirCoup(force / 3);
-	}
-
-	public int getForce() {
-		return force;
 	}
 }
